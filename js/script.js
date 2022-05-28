@@ -6,23 +6,23 @@
 
 "use strict"
 /**
- * This function displays the user input for a sentence as many times as is inputed
+ * This function calculates the factorial of the user input
  */
 function displaySentence () {
 
 	//declare variables
 	let counter = 1
-	let calculation = 1
+	let factorial = 1
 
 	//get user input
 	let userInt = parseInt(document.getElementById('userInt').value)
 	
 	// use a do while loop to calculate the factorial of the number
   do {
-    calculation = calculation * counter
+    factorial = factorial * counter
     counter = counter + 1
   } while (counter <= userInt)
 
 	//Display results
-	document.getElementById('message').innerHTML = "The factorial of " + userInt + " is " + calculation + "."
+	document.getElementById('message').innerHTML = "The factorial of " + userInt + " is " + factorial + "."
 }
