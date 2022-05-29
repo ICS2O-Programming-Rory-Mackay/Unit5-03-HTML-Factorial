@@ -24,5 +24,5 @@ function displaySentence () {
   } while (counter <= userInt)
 
 	//Display results
-	document.getElementById('message').innerHTML = "The factorial of " + userInt + " is " + factorial + "."
+	document.getElementById('message').innerHTML = "The factorial of " + userInt + "!" +" is " + factorial + "."
 }
